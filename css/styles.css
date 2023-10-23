@@ -124,3 +124,8 @@ a{
     }
 
 }
+@media screen and (max-width: 600px){
+    .head{
+        width: 700px;
+    }
+}
