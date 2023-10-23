@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulir</title>
+            <link rel="shortcut icon" href="img/harun.png" type="image/png">
+            <link rel="stylesheet" href="css/stylesdaftar.css">
+        </head>
+        <body>
+            <header class="head">
+                    <img src="img/harun.png" alt="Logo" class="gambar">
+                    <div class="side">
+                        <ul>Harun Abdulkarim Khafid</ul>
+                        <p>121140147 - pemrograman web</p>
+                    </div>    
+            </header>
+
+            <div class="container">
+                <div class="sidebar">
+                    <h4>Menu</h4>
+                    <section class="bar">
+                        <h1>-------------------------</h1>
+                        <a href="index.html"><button>Home</button></a><br>
+                        <a href="daftar.html"><button>Formulir</button></a><br>
+                        <a href="tabel.html"><button>Tabel</button></a>
+
+                    </section>
+                </div>
+                <div class="content">
+                    <h2>Formulir Pendaftaran </h2>
+                    <form action="tabel.html" method="get">
+                        <div class="pendaftaran">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama" class="input"><br><br>
+                            
+                            <label for="nim">NIM:</label>
+                            <input type="number" id="nim" name="nim" required placeholder="Masukkan NIM" class="input"><br><br>
+                            
+                            <label for="program_studi">Program Studi:</label>
+                            <input type="text" id="program_studi" name="program_studi" required placeholder="Masukkan Program Studi" class="input"><br><br>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Masukkan Email" class="input"><br><br>
+                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required placeholder="Masukkan Password" class="input"><br><br>
+                            
+                            <label for="jenis_kelamin">Jenis Kelamin:</label>
+                            <select name="jenis_kelamin" id="jenis_kelamin" required class="input">
+                                <option value="0" selected>pilih</option>
+                                <option value="laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select><br><br>
+
+                            
+                            <label for="tanggal_lahir">Tanggal Lahir:</label>
+                            <input type="date" id="tanggal_lahir" name="tanggal_lahir" required class="input"><br><br>
+                            
+                            <label for="alamat">Alamat:</label>
+                            <textarea id="alamat" name="alamat" rows="4" required placeholder="Masukkan Alamat" class="input"></textarea><br><br>
+                            
+                            <div class="submit">
+                                <button onclick="success()">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+            <footer class="container_fot">
+                <div class="footer">
+                    <div class="copy_right">
+                        <p>Hak Cipta &copy; 2023 Harun Abdulkarim Khafid</p>
+                    </div>
+                    <div class="logo_fot">
+                        <img src="img/harun.png" alt="Logo_fot">
+                    </div>
+    
+                </div>
+            </footer>
+            <script>
+                function success() {
+                    alert("Data berhasil dikirim");
+                    }
+            </script>
+        </body>
+
+</html>
