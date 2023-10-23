@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tabel</title>
+            <link rel="shortcut icon" href="img/harun.png" type="image/png">
+            <link rel="stylesheet" href="css/stylestabel.css">
+        </head>
+        <body>
+            <header class="head">
+                    <img src="img/harun.png" alt="Logo" class="gambar">
+                    <div class="side">
+                        <ul>Harun Abdulkarim Khafid</ul>
+                        <p>121140147 - pemrograman web</p>
+                    </div>    
+            </header>
+
+            <div class="container">
+                <div class="sidebar">
+                    <h4>Menu</h4>
+                    <section class="bar">
+                        <h1>-------------------------</h1>
+                        <a href="utama.html"><button>Home</button></a><br>
+                        <a href="daftar.html"><button>Formulir</button></a><br>
+                        <a href="tabel.html"><button>Tabel</button></a>
+
+                    </section>
+                    
+                </div>
+                <div class="content">
+                    <h1>Tabel Pendaftar</h1>
+                    <table id="tabel">
+                        <thead>
+                            <tr>
+                                <th rowspan="11">Nama</th>
+                                <th rowspan="11">NIM</th>
+                                <th rowspan="11">Program Studi</th>
+                                <th rowspan="11">Email</th>
+                                <th rowspan="11">Jenis Kelamin</th>
+                                <th rowspan="11">Tanggal Lahir</th>
+                                <th rowspan="11">Alamat</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Harun </td>
+                                <td>121140147</td>
+                                <td>Teknik Informatika</td>
+                                <td>harun.121140147@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>17-09-2003</td>
+                                <td>gang mangga</td>
+                            </tr>
+                            <tr>
+                                <td>Aldi</td>
+                                <td>12345678</td>
+                                <td>Teknik Industri</td>
+                                <td>aldi.12345678@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>19-06-2001</td>
+                                <td>Way huwi</td>
+                            </tr>
+                            <tr>
+                                <td>Raihan</td>
+                                <td>23456789</td>
+                                <td>Teknik Sipil</td>
+                                <td>raihan.23456789@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>09-12-2000</td>
+                                <td>Airan</td>
+                            </tr>
+                            <tr>
+                                <td>Dika</td>
+                                <td>34567890</td>
+                                <td>Teknik Kimia</td>
+                                <td>dika.34567890@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>22-03-2003</td>
+                                <td>Sukarame</td>
+                            </tr>
+                            <tr>
+                                <td>Sherly</td>
+                                <td>657742111</td>
+                                <td>DKV</td>
+                                <td>sherly.657742111@example.ac.id</td>
+                                <td>Perempuan</td>
+                                <td>12-05-2001</td>
+                                <td>Way Halim</td>
+                            </tr>
+                            <tr>
+                                <td>Nabilah</td>
+                                <td>43223521</td>
+                                <td>Teknik Informatika</td>
+                                <td>Nabilah.43223521@example.ac.id</td>
+                                <td>Perempuan</td>
+                                <td>19-02-2001</td>
+                                <td>Lampung</td>
+                            </tr>
+                            <tr>
+                                <td>Sasuke</td>
+                                <td>89112311</td>
+                                <td>Teknik Elektro</td>
+                                <td>Sasuke.89112311@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>12-02-1997</td>
+                                <td>Konoha</td>
+                            </tr>
+                            <tr>
+                                <td>Silvi</td>
+                                <td>23212221</td>
+                                <td>Akuntansi</td>
+                                <td>Silvi.23212221@example.ac.id</td>
+                                <td>Perempuan</td>
+                                <td>01-07-2001</td>
+                                <td>Bogor</td>
+                            </tr>
+                            <tr>
+                                <td>rahmat</td>
+                                <td>12365478</td>
+                                <td>Ilmu Komputer</td>
+                                <td>rahmat.12365478@example.ac.id</td>
+                                <td>Laki-laki</td>
+                                <td>25-08-2003</td>
+                                <td>Belwis</td>
+                            </tr>
+                            <tr>
+                                <td>Rizka</td>
+                                <td>121140999</td>
+                                <td>Teknik informatika</td>
+                                <td>rizka.121140999@example.ac.id</td>
+                                <td>Perempuan</td>
+                                <td>28-12-2003</td>
+                                <td>kedaton</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <footer class="container_fot">
+                <div class="footer">
+                    <div class="copy_right">
+                        <p>Hak Cipta &copy; 2023 Harun Abdulkarim Khafid</p>
+                    </div>
+                    <div class="logo_fot">
+                        <img src="img/harun.png" alt="Logo_fot">
+                    </div>
+    
+                </div>
+            </footer>
+            <script>
+                // Ambil parameter GET dari URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const nama = urlParams.get('nama');
+                const nim = urlParams.get('nim');
+                const program_studi = urlParams.get('program_studi');
+                const email = urlParams.get('email');
+                const jenis_kelamin = urlParams.get('jenis_kelamin');
+                const tanggal_lahir = urlParams.get('tanggal_lahir');
+                const alamat = urlParams.get('alamat');
+                console.log(nama, nim, program_studi, email, jenis_kelamin, tanggal_lahir, alamat);
+                // Tambahkan data ke dalam tabel
+                if( nama !== null &&  nim !== null &&  program_studi !== null &&  email !== null  &&  jenis_kelamin !== null &&  tanggal_lahir !== null &&  alamat !== null){
+                    const table = document.getElementById("tabel");
+                    const row = table.insertRow(1);
+                    const cell1 = row.insertCell(0);
+                    const cell2 = row.insertCell(1);
+                    const cell3 = row.insertCell(2);
+                    const cell4 = row.insertCell(3);
+                    const cell5 = row.insertCell(4);
+                    const cell6 = row.insertCell(5);
+                    const cell7 = row.insertCell(6);
+                    
+                    cell1.innerHTML = nama;
+                    cell2.innerHTML = nim;
+                    cell3.innerHTML = program_studi;
+                    cell4.innerHTML = email;
+                    cell5.innerHTML = jenis_kelamin;
+                    cell6.innerHTML = tanggal_lahir;
+                    cell7.innerHTML = alamat;
+                }
+            </script>
+        </body>
+
+
+    
+</html>
